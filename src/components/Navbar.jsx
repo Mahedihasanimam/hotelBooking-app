@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import useLogout from '../hooks/useLogout';
 
 const Navbar = () => {
-
+  const logout = useLogout();
+  const [authenticatedUser, setAuthenticatedUser] = useState(null);
+  console.log(authenticatedUser);
+  useEffect(() => {
+    const user = localStorage.getItem("loggedInUser");
+    if (user) {
+      setAuthenticatedUser(user);
+    }
+  }, []);
+  const handleLogout = () => {
+    logout()
+  };
     const navbar=<>
         <li className='mr-1'><NavLink to={'/'} className={({ isActive}) => isActive ? " text-green-500 font-bold" : "text-white"
   }>Home</NavLink></li>
@@ -16,7 +28,7 @@ const Navbar = () => {
    
     </>
     return (
-        <div className="navbar text-white bg-black bg-opacity-30 px-8  fixed">
+        <div className="navbar text-white bg-black bg-opacity-30 px-8  fixed top-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,7 +54,7 @@ const Navbar = () => {
               }
             </ul>
           </div>
-          <a className="btn btn-ghost lg:text-4xl text-xl"><span className='text-green-500'>My</span>Hotel</a>
+          <Link to={'/'} className="btn btn-ghost lg:text-4xl text-xl"><span className='text-green-500'>My</span>Hotel</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -53,7 +65,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-         <button className='border-2 border-slate-50 px-6 py-1 rounded-full hover:bg-green-500 hover:text-white hover:border-none'> <Link className='font-bold'>Login</Link></button>
+        {
+          authenticatedUser? 
+          <button onClick={handleLogout} className='border-2 border-slate-50 px-6 py-1 rounded-full hover:bg-green-500 hover:text-white hover:border-none'> <Link  className='font-bold'>Logout</Link></button>:<button className='border-2 border-slate-50 px-6 py-1 rounded-full hover:bg-green-500 hover:text-white hover:border-none'> <Link to={'/login'} className='font-bold'>Login</Link></button>
+        }
         </div>
       </div>
     );
