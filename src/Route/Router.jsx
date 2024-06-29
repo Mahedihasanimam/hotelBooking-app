@@ -4,9 +4,10 @@ import Home from "../Pages/Home/Home";
 import Login from "../components/login/Login";
 import Register from "../components/Register/Register";
 import Details from "../Pages/hotelDetails/Details";
-import About from "../Pages/about/About";
+
 import Hotels from "../Pages/hotel/Hotels";
 import MyBookings from "../Pages/mybookings/MyBookings";
+import AboutUs from "../Pages/aboutus/AboutUs";
 
 
 const router = createBrowserRouter([
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/about",
-          element:<About/>
+          element:<AboutUs/>
         },
         {
           path: "/hotel",
