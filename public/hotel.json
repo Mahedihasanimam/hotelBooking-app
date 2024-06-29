@@ -1,0 +1,103 @@
+[
+    {
+      "id": 1,
+      "name": "Grand Hotel California",
+      "location": "Los Angeles, California",
+      "description": "Experience luxury and comfort at the Grand Hotel California. Nestled in the heart of Los Angeles, our hotel offers breathtaking views of the city skyline and the Pacific Ocean. Indulge in world-class amenities, fine dining, and impeccable service. Whether you're visiting for business or pleasure, make your stay unforgettable at the Grand Hotel California.",
+      "image": "https://bellevuetheme.com/demo/hotelclassic/wp-content/uploads/sites/9/2023/12/valeriia-bugaiova-_pPHgeHz1uk-unsplash-605x465.jpg",
+      "rooms": [
+        {
+          "id": 101,
+          "type": "Standard Room",
+          "price": 200,
+          "booked": false,
+          "description": "Our standard rooms offer a cozy retreat with modern furnishings and city views. Perfect for solo travelers or couples looking for comfort and convenience.",
+          "amenities": ["WiFi", "TV", "Air Conditioning"]
+        },
+        {
+          "id": 102,
+          "type": "Deluxe Suite",
+          "price": 400,
+          "booked": false,
+          "description": "The Deluxe Suites at Grand Hotel California are spacious and elegantly appointed, featuring separate living and sleeping areas. Enjoy panoramic views of the city and luxurious amenities.",
+          "amenities": ["WiFi", "TV", "Air Conditioning", "Mini Bar", "Jacuzzi"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Seaside Resort & Spa",
+      "location": "Miami Beach, Florida",
+      "description": "Escape to the Seaside Resort & Spa, an oasis of tranquility on Miami Beach. Surrounded by pristine beaches and tropical gardens, our resort offers a perfect blend of relaxation and adventure. Pamper yourself at our luxurious spa, dine at gourmet restaurants, or simply unwind by the pool. Experience the ultimate beachfront getaway at Seaside Resort & Spa.",
+      "image": "https://bellevuetheme.com/demo/hotelclassic/wp-content/uploads/sites/9/2023/12/jason-leung-poI7DelFiVA-unsplash-605x465.jpg",
+      "rooms": [
+        {
+          "id": 201,
+          "type": "Ocean View Room",
+          "price": 300,
+          "booked": false,
+          "description": "Wake up to stunning ocean views from our Ocean View Rooms. These elegantly appointed rooms offer a private balcony overlooking the turquoise waters of Miami Beach.",
+          "amenities": ["WiFi", "TV", "Air Conditioning", "Balcony"]
+        },
+        {
+          "id": 202,
+          "type": "Beachfront Villa",
+          "price": 800,
+          "booked": false,
+          "description": "Indulge in the ultimate luxury at our Beachfront Villas, steps away from the sandy shores. These spacious villas feature private pools, personalized butler service, and breathtaking sunset views.",
+          "amenities": ["WiFi", "TV", "Air Conditioning", "Private Pool", "Butler Service"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mountain Lodge Retreat",
+      "location": "Aspen, Colorado",
+      "description": "Discover serenity in the heart of the Rocky Mountains at Mountain Lodge Retreat. Surrounded by majestic peaks and pristine wilderness, our lodge offers rustic charm with modern comforts. Unwind in cozy cabins, explore scenic hiking trails, or relax by the fireplace with a cup of hot cocoa. Experience nature at its finest at Mountain Lodge Retreat.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe91lmkQ2L86B_0m3dPKjzK3lt13pD_BHxwg&s",
+      "rooms": [
+        {
+          "id": 301,
+          "type": "Woodland Cabin",
+          "price": 250,
+          "booked": false,
+          "description": "Our Woodland Cabins provide a secluded retreat amidst towering pine trees. Each cabin features a wood-burning fireplace, perfect for cozy evenings after a day of outdoor adventures.",
+          "amenities": ["WiFi", "Fireplace", "Kitchenette"]
+        },
+        {
+          "id": 302,
+          "type": "Luxury Lodge Suite",
+          "price": 600,
+          "booked": false,
+          "description": "Experience luxury in the wilderness with our spacious Lodge Suites. These suites offer panoramic mountain views, a private balcony, and elegant furnishings.",
+          "amenities": ["WiFi", "Fireplace", "Mini Bar", "Balcony"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Metropolis Hotel",
+      "location": "New York City, New York",
+      "description": "Immerse yourself in the vibrant energy of New York City at the Metropolis Hotel. Located in the heart of Manhattan, our hotel blends modern elegance with urban sophistication. Explore iconic landmarks, shop along Fifth Avenue, or catch a Broadway show just steps away from your luxurious accommodations.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQf5JbWUQApKbde0mcDHJ-DxU3llLO1070PA&s",
+      "rooms": [
+        {
+          "id": 401,
+          "type": "City View Room",
+          "price": 350,
+          "booked": false,
+          "description": "Enjoy sweeping views of the Manhattan skyline from our City View Rooms. These stylish rooms feature contemporary design and all the amenities you need for a comfortable stay.",
+          "amenities": ["WiFi", "TV", "Air Conditioning", "City View"]
+        },
+        {
+          "id": 402,
+          "type": "Executive Suite",
+          "price": 700,
+          "booked": false,
+          "description": "Indulge in luxury in our Executive Suites, offering spacious living areas, a king-size bed, and stunning views of the Empire State Building. Perfect for business travelers or those seeking a VIP experience.",
+          "amenities": ["WiFi", "TV", "Air Conditioning", "Mini Bar", "City View"]
+        }
+      ]
+    }
+  ]
+  

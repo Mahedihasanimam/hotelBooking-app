@@ -72,7 +72,7 @@ const Login = () => {
         <br />
         <button type="submit">Login</button>
       </form>
-      <Link to={'/register'} className='text-green-500'>Register</Link>
+      <Link to={'/registar/reg'} className='text-green-500'>Register</Link>
     </div>
   );
 };
