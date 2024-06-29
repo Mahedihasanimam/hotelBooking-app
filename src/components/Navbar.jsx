@@ -19,11 +19,16 @@ const Navbar = () => {
         <li className='mr-1'><NavLink to={'/'} className={({ isActive}) => isActive ? " text-green-500 font-bold" : "text-white"
   }>Home</NavLink></li>
         <li className='mr-1'><NavLink to={'/about'} className={({ isActive}) => isActive ? " text-green-500 font-bold" : "text-white"
-  }>About</NavLink></li>
-        <li className='mr-1'><NavLink to={'/service'} className={({ isActive}) => isActive ? " text-green-500 font-bold" : "text-white"
-  }>Service</NavLink></li>
+  }>About Us</NavLink></li>
+       
         <li className='mr-1'><NavLink to={'/hotel'} className={({ isActive}) => isActive ? " text-green-500 font-bold" : " text-white"
-  }>Hotel</NavLink></li>
+  }>Hotels</NavLink></li>
+
+
+        {
+          authenticatedUser && <li className='mr-1'><NavLink to={'/mybookings'} className={({ isActive}) => isActive ? " text-green-500 font-bold" : " text-white"
+        }>My Bookings</NavLink></li>
+        }
       
    
     </>
