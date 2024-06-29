@@ -1,103 +1,248 @@
 [
-    {
-      "id": 1,
-      "name": "Grand Hotel California",
-      "location": "Los Angeles, California",
-      "description": "Experience luxury and comfort at the Grand Hotel California. Nestled in the heart of Los Angeles, our hotel offers breathtaking views of the city skyline and the Pacific Ocean. Indulge in world-class amenities, fine dining, and impeccable service. Whether you're visiting for business or pleasure, make your stay unforgettable at the Grand Hotel California.",
-      "image": "https://bellevuetheme.com/demo/hotelclassic/wp-content/uploads/sites/9/2023/12/valeriia-bugaiova-_pPHgeHz1uk-unsplash-605x465.jpg",
-      "rooms": [
-        {
-          "id": 101,
-          "type": "Standard Room",
-          "price": 200,
-          "booked": false,
-          "description": "Our standard rooms offer a cozy retreat with modern furnishings and city views. Perfect for solo travelers or couples looking for comfort and convenience.",
-          "amenities": ["WiFi", "TV", "Air Conditioning"]
-        },
-        {
-          "id": 102,
-          "type": "Deluxe Suite",
-          "price": 400,
-          "booked": false,
-          "description": "The Deluxe Suites at Grand Hotel California are spacious and elegantly appointed, featuring separate living and sleeping areas. Enjoy panoramic views of the city and luxurious amenities.",
-          "amenities": ["WiFi", "TV", "Air Conditioning", "Mini Bar", "Jacuzzi"]
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Seaside Resort & Spa",
-      "location": "Miami Beach, Florida",
-      "description": "Escape to the Seaside Resort & Spa, an oasis of tranquility on Miami Beach. Surrounded by pristine beaches and tropical gardens, our resort offers a perfect blend of relaxation and adventure. Pamper yourself at our luxurious spa, dine at gourmet restaurants, or simply unwind by the pool. Experience the ultimate beachfront getaway at Seaside Resort & Spa.",
-      "image": "https://bellevuetheme.com/demo/hotelclassic/wp-content/uploads/sites/9/2023/12/jason-leung-poI7DelFiVA-unsplash-605x465.jpg",
-      "rooms": [
-        {
-          "id": 201,
-          "type": "Ocean View Room",
-          "price": 300,
-          "booked": false,
-          "description": "Wake up to stunning ocean views from our Ocean View Rooms. These elegantly appointed rooms offer a private balcony overlooking the turquoise waters of Miami Beach.",
-          "amenities": ["WiFi", "TV", "Air Conditioning", "Balcony"]
-        },
-        {
-          "id": 202,
-          "type": "Beachfront Villa",
-          "price": 800,
-          "booked": false,
-          "description": "Indulge in the ultimate luxury at our Beachfront Villas, steps away from the sandy shores. These spacious villas feature private pools, personalized butler service, and breathtaking sunset views.",
-          "amenities": ["WiFi", "TV", "Air Conditioning", "Private Pool", "Butler Service"]
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Mountain Lodge Retreat",
-      "location": "Aspen, Colorado",
-      "description": "Discover serenity in the heart of the Rocky Mountains at Mountain Lodge Retreat. Surrounded by majestic peaks and pristine wilderness, our lodge offers rustic charm with modern comforts. Unwind in cozy cabins, explore scenic hiking trails, or relax by the fireplace with a cup of hot cocoa. Experience nature at its finest at Mountain Lodge Retreat.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe91lmkQ2L86B_0m3dPKjzK3lt13pD_BHxwg&s",
-      "rooms": [
-        {
-          "id": 301,
-          "type": "Woodland Cabin",
-          "price": 250,
-          "booked": false,
-          "description": "Our Woodland Cabins provide a secluded retreat amidst towering pine trees. Each cabin features a wood-burning fireplace, perfect for cozy evenings after a day of outdoor adventures.",
-          "amenities": ["WiFi", "Fireplace", "Kitchenette"]
-        },
-        {
-          "id": 302,
-          "type": "Luxury Lodge Suite",
-          "price": 600,
-          "booked": false,
-          "description": "Experience luxury in the wilderness with our spacious Lodge Suites. These suites offer panoramic mountain views, a private balcony, and elegant furnishings.",
-          "amenities": ["WiFi", "Fireplace", "Mini Bar", "Balcony"]
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Metropolis Hotel",
-      "location": "New York City, New York",
-      "description": "Immerse yourself in the vibrant energy of New York City at the Metropolis Hotel. Located in the heart of Manhattan, our hotel blends modern elegance with urban sophistication. Explore iconic landmarks, shop along Fifth Avenue, or catch a Broadway show just steps away from your luxurious accommodations.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQf5JbWUQApKbde0mcDHJ-DxU3llLO1070PA&s",
-      "rooms": [
-        {
-          "id": 401,
-          "type": "City View Room",
-          "price": 350,
-          "booked": false,
-          "description": "Enjoy sweeping views of the Manhattan skyline from our City View Rooms. These stylish rooms feature contemporary design and all the amenities you need for a comfortable stay.",
-          "amenities": ["WiFi", "TV", "Air Conditioning", "City View"]
-        },
-        {
-          "id": 402,
-          "type": "Executive Suite",
-          "price": 700,
-          "booked": false,
-          "description": "Indulge in luxury in our Executive Suites, offering spacious living areas, a king-size bed, and stunning views of the Empire State Building. Perfect for business travelers or those seeking a VIP experience.",
-          "amenities": ["WiFi", "TV", "Air Conditioning", "Mini Bar", "City View"]
-        }
-      ]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Luxury Resort & Spa",
+    "location": "Maldives",
+    "description": "Escape to the pristine beaches of the Maldives at our Luxury Resort & Spa. Enjoy overwater villas, private pools, and world-class dining options.",
+    "image": "https://bellevuetheme.com/demo/hotelclassic/wp-content/uploads/sites/9/2023/12/valeriia-bugaiova-_pPHgeHz1uk-unsplash-605x465.jpg",
+    "rooms": [
+      {
+        "id": 101,
+        "type": "Water Villa",
+        "price": 1500,
+        "booked": false,
+        "description": "Experience ultimate luxury in our Water Villas, where crystal-clear waters are just steps away from your private deck.",
+        "amenities": ["WiFi", "Private Pool", "Sun Deck"]
+      },
+      {
+        "id": 102,
+        "type": "Beach Suite",
+        "price": 1200,
+        "booked": false,
+        "description": "Relax in spacious Beach Suites with panoramic views of the Indian Ocean. Perfect for families and honeymooners.",
+        "amenities": ["WiFi", "TV", "Air Conditioning", "Beach Access"]
+      },
+      {
+        "id": 103,
+        "type": "Overwater Bungalow",
+        "price": 1800,
+        "booked": false,
+        "description": "Stay directly above the lagoon in our Overwater Bungalows. Enjoy uninterrupted views and direct access to the water.",
+        "amenities": ["WiFi", "Glass Floor Panel", "Private Terrace"]
+      },
+      {
+        "id": 104,
+        "type": "Penthouse Suite",
+        "price": 2500,
+        "booked": false,
+        "description": "Indulge in luxury with our Penthouse Suites offering stunning ocean views and exclusive services.",
+        "amenities": ["WiFi", "Infinity Pool", "Butler Service"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "City Center Hotel",
+    "location": "New York City, USA",
+    "description": "Explore the bustling streets of New York City from our centrally located City Center Hotel. Enjoy modern accommodations and easy access to top attractions.",
+    "image": "https://bellevuetheme.com/demo/hotelclassic/wp-content/uploads/sites/9/2023/12/jason-leung-poI7DelFiVA-unsplash-605x465.jpg",
+    "rooms": [
+      {
+        "id": 201,
+        "type": "Standard Room",
+        "price": 300,
+        "booked": false,
+        "description": "Our Standard Rooms offer comfort and convenience with city views. Ideal for business travelers and tourists alike.",
+        "amenities": ["WiFi", "TV", "Air Conditioning"]
+      },
+      {
+        "id": 202,
+        "type": "Executive Suite",
+        "price": 600,
+        "booked": false,
+        "description": "Indulge in luxury in our Executive Suites, featuring separate living and sleeping areas, perfect for extended stays.",
+        "amenities": ["WiFi", "TV", "Air Conditioning", "Mini Bar", "City View"]
+      },
+      {
+        "id": 203,
+        "type": "Duplex Loft",
+        "price": 900,
+        "booked": false,
+        "description": "Spread out in our spacious Duplex Lofts with modern decor and panoramic city views.",
+        "amenities": ["WiFi", "Entertainment System", "Kitchenette"]
+      },
+      {
+        "id": 204,
+        "type": "Family Suite",
+        "price": 800,
+        "booked": false,
+        "description": "Ideal for families, our Family Suites offer multiple bedrooms and a comfortable living area in the heart of the city.",
+        "amenities": ["WiFi", "TV", "Air Conditioning", "City View"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mountain Lodge Retreat",
+    "location": "Aspen, Colorado, USA",
+    "description": "Escape to the Rocky Mountains at our Mountain Lodge Retreat. Enjoy rustic cabins, scenic trails, and cozy evenings by the fireplace.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe91lmkQ2L86B_0m3dPKjzK3lt13pD_BHxwg&s",
+    "rooms": [
+      {
+        "id": 301,
+        "type": "Woodland Cabin",
+        "price": 250,
+        "booked": false,
+        "description": "Our Woodland Cabins offer a secluded escape surrounded by nature. Cozy up by the fireplace after a day of hiking.",
+        "amenities": ["WiFi", "Fireplace", "Kitchenette"]
+      },
+      {
+        "id": 302,
+        "type": "Luxury Lodge Suite",
+        "price": 600,
+        "booked": false,
+        "description": "Experience luxury in the wilderness with our spacious Lodge Suites, featuring panoramic mountain views.",
+        "amenities": ["WiFi", "Fireplace", "Mini Bar", "Balcony"]
+      },
+      {
+        "id": 303,
+        "type": "Mountain View Chalet",
+        "price": 400,
+        "booked": false,
+        "description": "Enjoy stunning mountain vistas from our Mountain View Chalets, complete with cozy interiors and modern amenities.",
+        "amenities": ["WiFi", "Fireplace", "Scenic Views"]
+      },
+      {
+        "id": 304,
+        "type": "Ski Lodge Suite",
+        "price": 700,
+        "booked": false,
+        "description": "Perfect for ski enthusiasts, our Ski Lodge Suites offer easy access to the slopes and luxurious comfort after a day of skiing.",
+        "amenities": ["WiFi", "Fireplace", "Ski-in/Ski-out Access"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Coastal Resort",
+    "location": "Amalfi Coast, Italy",
+    "description": "Enjoy the beauty of the Amalfi Coast at our Coastal Resort. Relax in Mediterranean-style villas with stunning sea views and luxurious amenities.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQf5JbWUQApKbde0mcDHJ-DxU3llLO1070PA&s",
+    "rooms": [
+      {
+        "id": 401,
+        "type": "Ocean View Villa",
+        "price": 800,
+        "booked": false,
+        "description": "Wake up to breathtaking views of the Mediterranean from our Ocean View Villas. Experience luxury and relaxation in a serene coastal setting.",
+        "amenities": ["WiFi", "Private Pool", "Sea View", "Balcony"]
+      },
+      {
+        "id": 402,
+        "type": "Deluxe Suite",
+        "price": 1000,
+        "booked": false,
+        "description": "Indulge in our Deluxe Suites, offering spacious living areas and elegant decor inspired by the Amalfi Coast lifestyle.",
+        "amenities": ["WiFi", "TV", "Air Conditioning", "Mini Bar"]
+      },
+      {
+        "id": 403,
+        "type": "Mediterranean Villa",
+        "price": 1200,
+        "booked": false,
+        "description": "Experience the ultimate in Mediterranean luxury with our private villas, featuring expansive terraces and stunning sea views.",
+        "amenities": ["WiFi", "Infinity Pool", "Terrace"]
+      },
+      {
+        "id": 404,
+        "type": "Coastal Penthouse",
+        "price": 1500,
+        "booked": false,
+        "description": "Enjoy panoramic coastal views from our exclusive Coastal Penthouse, offering luxurious amenities and spacious living areas.",
+        "amenities": ["WiFi", "Private Terrace", "Infinity Pool"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Historic Downtown Hotel",
+    "location": "Boston, Massachusetts, USA",
+    "description": "Immerse yourself in history at our Historic Downtown Hotel in Boston. Located near iconic landmarks and museums, our hotel offers charm and modern amenities.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0JxgI2qCHTsxA7QPfdfjYhu9rf6CT_-1mAA&s",
+    "rooms": [
+      {
+        "id": 501,
+        "type": "Classic Room",
+        "price": 200,
+        "booked": false,
+        "description": "Experience the elegance of our Classic Rooms, blending historic charm with modern comforts. Ideal for business travelers and history enthusiasts.",
+        "amenities": ["WiFi", "TV", "Air Conditioning"]
+      },
+      {
+        "id": 502,
+        "type": "Presidential Suite",
+        "price": 1200,
+        "booked": false,
+        "description": "Live like royalty in our Presidential Suite, featuring spacious living areas and breathtaking views of the city skyline.",
+        "amenities": ["WiFi", "TV", "Air Conditioning", "Mini Bar", "City View"]
+      },
+      {
+        "id": 503,
+        "type": "Grand Ballroom Suite",
+        "price": 2500,
+        "booked": false,
+        "description": "Host lavish events or enjoy expansive living in our Grand Ballroom Suite, offering luxurious amenities and historic charm.",
+        "amenities": ["WiFi", "Grand Ballroom", "City View"]
+      },
+      {
+        "id": 504,
+        "type": "Historic Governor's Suite",
+        "price": 1500,
+        "booked": false,
+        "description": "Step into history in our Historic Governor's Suite, featuring period furnishings and views of Boston's historic streets.",
+        "amenities": ["WiFi", "Antique Decor", "City View"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Riverside Retreat",
+    "location": "Kyoto, Japan",
+    "description": "Find tranquility along the riverside at our Riverside Retreat in Kyoto. Experience traditional Japanese hospitality in modern ryokan-style accommodations.",
+    "image": "https://media.istockphoto.com/id/472899538/photo/downtown-cleveland-hotel-entrance-and-waiting-taxi-cab.jpg?s=612x612&w=0&k=20&c=rz-WSe_6gKfkID6EL9yxCdN_UIMkXUBsr67884j-X9o=",
+    "rooms": [
+      {
+        "id": 601,
+        "type": "Ryokan Room",
+        "price": 400,
+        "booked": false,
+        "description": "Stay in traditional Japanese ryokan rooms with tatami flooring and serene garden views. Experience Japanese culture and hospitality.",
+        "amenities": ["WiFi", "Japanese Garden View", "Futon Beds"]
+      },
+      {
+        "id": 602,
+        "type": "Suite with River View",
+        "price": 800,
+        "booked": false,
+        "description": "Enjoy panoramic views of the Kamo River from our Suites. Relax in modern comforts with a touch of Japanese elegance.",
+        "amenities": ["WiFi", "River View", "Japanese Tatami Room", "Mini Bar"]
+      },
+      {
+        "id": 603,
+        "type": "Zen Garden Suite",
+        "price": 1000,
+        "booked": false,
+        "description": "Find peace in our Zen Garden Suite, featuring a private Japanese garden and tranquil river views.",
+        "amenities": ["WiFi", "Zen Garden", "River View"]
+      },
+      {
+        "id": 604,
+        "type": "Imperial Suite",
+        "price": 1500,
+        "booked": false,
+        "description": "Experience the pinnacle of luxury in our Imperial Suite, with spacious living areas and exclusive views of the Kamo River.",
+        "amenities": ["WiFi", "Panoramic River View", "Tatami Room", "Tea Ceremony"]
+      }
+    ]
+  }
+]

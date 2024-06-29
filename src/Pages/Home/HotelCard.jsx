@@ -1,11 +1,15 @@
 import React from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { Link } from 'react-router-dom';
+// ..
+AOS.init();
 const HotelCard = ({ hotel }) => {
-    const {name,location,description,image}=hotel
+    const {name,location,description,image,id}=hotel
     return (
-        <div className="bg-white rounded-lg overflow-hidden shadow-md">
+        <div className="bg-white rounded-lg overflow-hidden shadow-md  hover:shadow-2xl transition-transform duration-300" data-aos="fade-up" data-aos-duration="2000">
             {/* Hotel Image */}
-            <img src={image} alt={name} className="h-64 w-full object-cover object-center" />
+            <img  src={image} alt={name} className="h-64 w-full object-cover object-center hover:scale-105 transform transition-transform duration-300" />
 
             {/* Hotel Details */}
             <div className="p-4">
@@ -13,19 +17,14 @@ const HotelCard = ({ hotel }) => {
                 <p className="text-gray-600 mb-4">{location}</p>
 
                 {/* Hotel Description (Optional) */}
-                <p className="text-gray-700 mb-4">{description}</p>
+                <p className="text-gray-700 mb-4">{description.slice(0,300)}</p>
 
-                {/* Hotel Features/Amenities (Optional) */}
-                {/* <div className="flex flex-wrap mb-4">
-                    {hotel.features.map((feature, index) => (
-                        <div key={index} className="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-sm mr-2 mb-2">{feature}</div>
-                    ))}
-                </div> */}
+              
 
-                {/* Room Types */}
-                {/* <div className="border-t border-gray-200 pt-4">
+                {/* Room Types
+                <div className="border-t border-gray-200 pt-4">
                     <h3 className="text-lg font-semibold mb-2">Rooms Available</h3>
-                    {hotel.rooms.map(room => (
+                    {rooms.map(room => (
                         <div key={room.id} className="flex items-center justify-between py-2">
                             <p className="text-gray-700">{room.type}</p>
                             <p className="text-green-500 font-semibold">${room.price} / night</p>
@@ -34,7 +33,7 @@ const HotelCard = ({ hotel }) => {
                 </div> */}
 
                 {/* Booking Button (Optional) */}
-                <button className="bg-green-500 text-white px-4 py-2 mt-4 rounded-md hover:bg-green-600 transition duration-300">Book Now</button>
+                <Link to={`/details/${id}`} className="bg-green-500 my-6 text-white px-4 py-2 mt-4 rounded-md hover:bg-green-600 transition duration-300">View Rooms</Link>
             </div>
         </div>
         

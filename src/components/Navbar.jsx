@@ -28,7 +28,7 @@ const Navbar = () => {
    
     </>
     return (
-        <div className="navbar text-white bg-black bg-opacity-30 px-8  fixed top-0">
+        <div className="navbar text-white z-50 bg-black bg-opacity-30 px-8  fixed top-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -54,7 +54,7 @@ const Navbar = () => {
               }
             </ul>
           </div>
-          <Link to={'/'} className="btn btn-ghost lg:text-4xl text-xl"><span className='text-green-500'>My</span>Hotel</Link>
+          <Link to={'/'} className=" lg:text-4xl text-xl"><span className='text-green-500'>My</span>Hotel</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

@@ -90,7 +90,7 @@ const Footer = () => {
                   <li className="hover:text-green-500 flex items-center">
                     <CiLocationOn className="mr-1 text-green-500" />{" "}
                     <Link className="text-white no-underline opacity-70">
-                      mymensingh,dhaka,bangladesh
+                      mymensingh, dhaka,bangladesh
                     </Link>
                   </li>
                   <li className="hover:text-green-500 flex items-center">

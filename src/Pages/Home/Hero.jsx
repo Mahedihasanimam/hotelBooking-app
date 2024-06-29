@@ -10,7 +10,7 @@ const Hero = () => {
   <div className="hero-overlay bg-opacity-50"></div>
   <div className="hero-content text-neutral-content text-center">
     <div className="max-w-6xl">
-      <h1 className="mb-5 text-6xl font-bold">Reserve Your Perfect Vacation Retreat</h1>
+      <h1 className="mb-5 lg:text-6xl md:text-4xl text-2xl font-bold">Reserve Your Perfect Vacation Retreat</h1>
       <p className="mb-5 font-bold">
       Rooms from $129 / night
       </p>
