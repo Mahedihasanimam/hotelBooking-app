@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const RoomCard = ({ room }) => {
   const { id, type, price, booked, description, amenities, image } = room;
-
+const navigate=useNavigate()
   const handleBooking = (room) => {
     // Retrieve existing booked rooms from localStorage
     const bookedRooms = JSON.parse(localStorage.getItem('bookedRooms')) || [];
@@ -10,7 +12,13 @@ const RoomCard = ({ room }) => {
     bookedRooms.push(room);
     // Store the updated array back into localStorage
     localStorage.setItem('bookedRooms', JSON.stringify(bookedRooms));
-    alert(`${type} booked!`); 
+    Swal.fire({
+      title: 'Success!',
+      text: `${type} booked!`,
+      icon: 'success',
+      confirmButtonText: 'ok'
+    });
+    navigate('/mybookings')
   };
 
   return (

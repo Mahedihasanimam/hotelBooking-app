@@ -18,7 +18,7 @@ const MyBookings = () => {
   return (
     <div className="container mx-auto mt-20">
        <h1 className="text-4xl font-bold border-l-4  px-2 my-12 mx-4 border-green-500" data-aos="fade-up" data-aos-duration="1000">My Bookings</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12 px-2">
         {bookedRooms.map((room, index) => (
           <div key={index} className="bg-gray-100 rounded-lg p-4">
             <h3 className="text-xl font-bold mb-2">{room.type}</h3>

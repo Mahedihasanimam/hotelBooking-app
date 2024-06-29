@@ -1,10 +1,11 @@
+import AllHotel from "../Home/AllHotel";
 
 
 const Hotels = () => {
     return (
         <div>
-            <div className="mt-20 h-screen">
-            <h1>Hotels page is comming soon</h1>
+            <div className="mt-20 ">
+            <AllHotel/>
         </div>
         </div>
     );
