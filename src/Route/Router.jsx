@@ -9,42 +9,41 @@ import Hotels from "../Pages/hotel/Hotels";
 import MyBookings from "../Pages/mybookings/MyBookings";
 import AboutUs from "../Pages/aboutus/AboutUs";
 
-
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <MainLayout/>,
-      children:[
-        {
-          path: "/",
-          element:<Home/>
-        },
-        {
-          path: "/about",
-          element:<AboutUs/>
-        },
-        {
-          path: "/hotel",
-          element:<Hotels/>
-        },
-        {
-          path: "/mybookings",
-          element:<MyBookings/>
-        },
-        {
-          path: "/login",
-          element:<Login/>
-        },
-        {
-          path: "/registar/reg",
-          element:<Register/>
-        },
-        {
-          path: "/details/:id",
-          element:<Details/>
-        }
-      ]
-    },
-  ]);
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <AboutUs />,
+      },
+      {
+        path: "/hotel",
+        element: <Hotels />,
+      },
+      {
+        path: "/mybookings",
+        element: <MyBookings />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/registar/reg",
+        element: <Register />,
+      },
+      {
+        path: "/details/:id",
+        element: <Details />,
+      },
+    ],
+  },
+]);
 
-  export default router
+export default router;

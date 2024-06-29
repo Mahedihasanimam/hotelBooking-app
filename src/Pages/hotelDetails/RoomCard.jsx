@@ -4,21 +4,21 @@ import Swal from "sweetalert2";
 
 const RoomCard = ({ room }) => {
   const { id, type, price, booked, description, amenities, image } = room;
-const navigate=useNavigate()
+  const navigate = useNavigate();
   const handleBooking = (room) => {
     // Retrieve existing booked rooms from localStorage
-    const bookedRooms = JSON.parse(localStorage.getItem('bookedRooms')) || [];
+    const bookedRooms = JSON.parse(localStorage.getItem("bookedRooms")) || [];
     // Add the current room to the array
     bookedRooms.push(room);
     // Store the updated array back into localStorage
-    localStorage.setItem('bookedRooms', JSON.stringify(bookedRooms));
+    localStorage.setItem("bookedRooms", JSON.stringify(bookedRooms));
     Swal.fire({
-      title: 'Success!',
+      title: "Success!",
       text: `${type} booked!`,
-      icon: 'success',
-      confirmButtonText: 'ok'
+      icon: "success",
+      confirmButtonText: "ok",
     });
-    navigate('/mybookings')
+    navigate("/mybookings");
   };
 
   return (
@@ -32,14 +32,20 @@ const navigate=useNavigate()
             <p>Facilities:</p>
             <ul className="flex">
               {amenities.map((f, index) => (
-                <li key={index} className="btn p-1 bg-green-300 hover:bg-green-500 btn-xs font-bold">
+                <li
+                  key={index}
+                  className="btn p-1 bg-green-300 hover:bg-green-500 btn-xs font-bold"
+                >
                   {f}
                 </li>
               ))}
             </ul>
           </div>
-         
-          <button onClick={() => handleBooking(room)} className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4">
+
+          <button
+            onClick={() => handleBooking(room)}
+            className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4"
+          >
             Book Now
           </button>
         </div>

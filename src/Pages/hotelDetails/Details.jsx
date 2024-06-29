@@ -59,7 +59,9 @@ const Details = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-4 px-4 md:grid-cols-2 lg:grid-cols-3">
-        {myhotel?.rooms.map((room) =><RoomCard key={room.id} room={room}/>)}
+        {myhotel?.rooms.map((room) => (
+          <RoomCard key={room.id} room={room} />
+        ))}
       </div>
     </div>
   );

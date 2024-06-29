@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LogHom from "./LogHom";
-import Register from "./components/Register/Register"; // Corrected import path
+import Register from "./components/Register/Register";
 import Login from "./Login";
 
 const App = () => {
@@ -11,8 +11,6 @@ const App = () => {
       setAuthenticatedUser(user);
     }
   }, []);
-
-
 
   const handleRegister = (username) => {
     setAuthenticatedUser(username);
