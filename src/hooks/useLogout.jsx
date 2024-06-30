@@ -1,10 +1,10 @@
 // useLogout.js
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const useLogout = () => {
   const navigate = useNavigate();
-
   const logout = () => {
     // Remove login
 
@@ -17,6 +17,7 @@ const useLogout = () => {
     }).then(() => {
       navigate("/login");
       window.location.reload();
+  
     });
   };
 
